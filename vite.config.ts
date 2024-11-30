@@ -13,7 +13,7 @@ export default defineConfig({
       entry: 'src/index.ts',
       name: 'SalekinDesignSystem',
       formats: ['es', 'cjs'], // Include ES module format
-      fileName: (format) => `design-system.${format}.js`,
+      fileName: 'index',
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'antd'], // Treat as peer dependencies
