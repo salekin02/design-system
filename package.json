@@ -1,6 +1,6 @@
 {
   "name": "salekin-design-system",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "description": "A design system package for React",
   "main": "dist/design-system.umd.js",
@@ -18,7 +18,11 @@
     "type": "git",
     "url": "https://github.com/salekin02/design-system.git"
   },
-  "keywords": ["react", "design-system", "ui"],
+  "keywords": [
+    "react",
+    "design-system",
+    "ui"
+  ],
   "author": "Serajus Salekin",
   "license": "MIT",
   "dependencies": {
