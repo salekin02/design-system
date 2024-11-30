@@ -1,6 +1,6 @@
 {
   "name": "salekin-design-system",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "type": "module",
   "description": "A design system package for React",
   "main": "dist/index.js",
