@@ -1,0 +1,9 @@
+# Ignore test files and build artifacts
+test/
+*.test.tsx
+*.test.js
+
+# Ignore development configuration files
+.vscode/
+.idea/
+

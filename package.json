@@ -25,6 +25,11 @@
   ],
   "author": "Serajus Salekin",
   "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "antd": "^5.0.0",
     "react": "^17.0.0 || ^18.0.0",
