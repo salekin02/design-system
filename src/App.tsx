@@ -1,9 +1,10 @@
-import React from 'react';
-import { Button } from 'antd';
-
+import { Button, Card, Input } from "./components";
+import './index.css';
 const App = () => (
   <div className="App">
-    <Button type="primary">Button</Button>
+    <Button variant="outlined">Button</Button>
+    <Input type="text" placeholder="Input" variant="filled" />
+    <Card body="Card body" title="ok" footerItems={[<Button>test</Button>]} />
   </div>
 );
 
