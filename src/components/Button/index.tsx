@@ -9,4 +9,4 @@ const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   return <AntButton {...props}>{children}</AntButton>;
 };
 
-export default Button;
+export {Button};

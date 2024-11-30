@@ -1,7 +1,7 @@
 
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Card from './index';
+import {Card} from './index';
 
 test('renders the card component', async () => {
     const { getByText } = render(<Card body="Card Body" />);

@@ -9,4 +9,4 @@ const Input: React.FC<InputProps> = ({ ...props }) => {
     return <AntInput {...props} />;
 };
 
-export default Input;
+export { Input };

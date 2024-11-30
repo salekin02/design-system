@@ -1,6 +1,6 @@
-export { default as Button } from './components/Button';
-export { default as Input } from './components/Input';
-export { default as Card } from './components/Card';
+export { Button } from './components/Button';
+export { Input } from './components/Input';
+export { Card } from './components/Card';
 export * from './tokens/colors';
 export * from './tokens/typography';
 export * from './tokens/spacing';
