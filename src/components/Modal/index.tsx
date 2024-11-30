@@ -6,12 +6,12 @@ interface ModalProps extends AntModalProps {
     setOpenModal?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const App: React.FC<ModalProps> = ({ modalBody, setOpenModal, ...props }) => {
+const Modal: React.FC<ModalProps> = ({ modalBody, setOpenModal, ...props }) => {
     return (
-        <AntModal onClose={() => setOpenModal && setOpenModal(false)} {...props}>
+        <AntModal onCancel={() => setOpenModal && setOpenModal(false)} {...props}>
             {modalBody}
         </AntModal>
     );
 };
 
-export default App;
+export { Modal };
