@@ -4,18 +4,20 @@ import { colors } from '../../tokens/colors';
 import { spacing } from '../../tokens/spacing';
 import { typography } from '../../tokens/typography';
 
-interface ButtonProps extends AntButtonProps {
-  tooltip?: TooltipProps;
-}
+type ButtonProps = AntButtonProps & Partial<{
+  tooltip: TooltipProps;
+  colorPrimary: string;
+  fontSize: number;
+}>
 
-const Button: React.FC<ButtonProps> = ({ children, tooltip, ...props }) => {
+const Button: React.FC<ButtonProps> = ({ children, tooltip, colorPrimary, fontSize, ...props }) => {
   return <ConfigProvider
     theme={{
       token: {
-        colorPrimary: colors.primary,
+        colorPrimary: colorPrimary || colors.primary,
         colorTextSecondary: colors.textSecondary,
         margin: spacing.medium,
-        fontSize: typography.fontSize.medium,
+        fontSize: fontSize || typography.fontSize.medium,
       },
     }}
   >{tooltip ?
