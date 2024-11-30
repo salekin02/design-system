@@ -12,11 +12,11 @@ export default defineConfig({
     lib: {
       entry: 'src/index.ts',
       name: 'SalekinDesignSystem',
-      formats: ['es', 'cjs'], // Include ES module format
+      formats: ['es', 'cjs'],
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'antd'], // Treat as peer dependencies
+      external: ['react', 'react-dom', 'antd'],
       output: {
         globals: {
           react: 'React',
